@@ -1,16 +1,62 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Application Form</title>
+    <style>
+        /* Add your CSS styles here to enhance the design */
+        .feedback {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <h1>Internship Application Form</h1>
+    <form>
+        <div>
+            <label for="first-name-input">First Name:</label>
+            <input type="text" id="first-name-input" name="first-name">
+            <span class="feedback" id="first-name-feedback"></span>
+        </div>
+        <div>
+            <label for="last-name-input">Last Name:</label>
+            <input type="text" id="last-name-input" name="last-name">
+            <span class="feedback" id="last-name-feedback"></span>
+        </div>
+        <div>
+            <label for="email-input">Email:</label>
+            <input type="email" id="email-input" name="email">
+            <span class="feedback" id="email-feedback"></span>
+        </div>
+        <div>
+            <label for="college-input">College Name:</label>
+            <input type="text" id="college-input" name="college">
+            <span class="feedback" id="college-feedback"></span>
+        </div>
+        <div>
+            <label for="graduation-year-select">Graduation Year:</label>
+            <select id="graduation-year-select" name="graduation-year">
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+            </select>
+        </div>
+        <div>
+            <label for="roll-no-input">Roll No:</label>
+            <input type="text" id="roll-no-input" name="roll-no">
+            <span class="feedback" id="roll-no-feedback"></span>
+        </div>
+        <div>
+            <label for="conditions-checkbox">I agree to the terms and conditions:</label>
+            <input type="checkbox" id="conditions-checkbox" name="conditions">
+            <span class="feedback" id="conditions-feedback"></span>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
 </body>
-
 </html>
